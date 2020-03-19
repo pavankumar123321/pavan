@@ -1,0 +1,41 @@
+public class AbstDemo
+{
+	public static void main(String[] args)
+	{
+		PavanPh obj = new RameshPh();
+		obj.call();
+		obj.cook();
+		obj.move();
+		obj.dance();
+	}
+}
+abstract class PavanPh
+{
+    public void call()
+    {
+        System.out.println("calling");
+    }
+    public abstract  void  dance();
+    public abstract void move();
+    public abstract void cook();
+}
+abstract class HarshaPh extends PavanPh
+{
+     public  void move()
+     {
+       System.out.println("moving"); 
+     }
+    
+}
+class RameshPh extends HarshaPh
+{
+    public  void dance()
+    
+    {
+         System.out.println("dancing");
+    }
+    public  void cook()
+    {
+         System.out.println("cooking");
+    }
+}
