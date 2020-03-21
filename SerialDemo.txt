@@ -1,0 +1,29 @@
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectInputStream;
+
+
+public class SerialDemo
+{
+	public static void main(String[] args) throws Exception
+	{
+	  Save obj = new save();
+	  obj.i = 4;
+	  File f = new File("obj.txt");
+	  FileOutputStream fos = new FileOutputStream(f);
+	  ObjectOutputStream oos = new ObjectOutputStream(fos);
+	  oos.writeObjects(obj);
+	  
+	  FileInputStream fis = new FileOutputStream(f);
+	  ObjectInputStream ois = new ObjectInputStream(fis);
+	  Save obj1 = (Save) ois.readObject();
+	  System.out.println("value of obj1 " + obj1.j);
+	  
+	}
+}
+class Save implements Serializable
+{
+    int i;
+}

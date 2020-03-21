@@ -1,0 +1,33 @@
+public class SuperKey
+{
+	public static void main(String[] args)
+	{
+	    B obj = new B(5);
+	 
+	}
+}
+class A
+{
+    public  A()
+    {
+     System.out.println("vfj,,j");
+    }
+     public  A(int i)
+    {
+     System.out.println("pavan");
+    }
+    
+}
+class B extends A
+{
+     public  B( )
+    {
+     System.out.println("1");
+    }
+      public  B(int i )
+    {
+        super(i);
+     System.out.println("23345");
+    }
+    
+}
