@@ -1,0 +1,83 @@
+public class InheritanceEx
+{
+	public static void main(String[] args)
+	{
+	    AddSubMul obj = new AddSubMul();
+	    obj.a=1;
+	    obj.b=2;
+	    obj.sum();
+	  System.out.println(obj.c);
+	   obj.sub();
+	   	  System.out.println(obj.c);
+	   	   obj.mul();
+	   	  System.out.println(obj.c);
+	   
+	}
+}
+class Add
+{
+    int a,b,c;
+    public void sum()
+    {
+     c=a+b;
+     }
+    
+}
+class AddSubMul extends Add
+{
+
+    public void sub()
+    {
+     c=a-b;
+     }
+     
+    public void mul()
+    {
+     c=a*b;
+     }
+    
+    
+}
+    
+    
+{
+	public static void main(String[] args)
+	{
+	    AddSubMul obj = new AddSubMul();
+	    obj.a=1;
+	    obj.b=2;
+	    obj.sum();
+	  System.out.println(obj.c);
+	   obj.sub();
+	   	  System.out.println(obj.c);
+	   	   obj.mul();
+	   	  System.out.println(obj.c);
+	   
+	}
+}
+class Add
+{
+    int a,b,c;
+    public void sum()
+    {
+     c=a+b;
+     }
+    
+}
+class AddSubMul extends Add
+{
+
+    public void sub()
+    {
+     c=a-b;
+     }
+     
+    public void mul()
+    {
+     c=a*b;
+     }
+    
+    
+}
+    
+    
