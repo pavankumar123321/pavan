@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class StringConcatiation
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String s1,s2,s3;
+	    System.out.println("Enter 2 strings");
+	    s1=sc.nextLine();
+	    s2=sc.nextLine();
+	    s3=s1.concat(s2);
+	    System.out.println("Concatination of two strings is "+s3);
+	    
+	}
+}
