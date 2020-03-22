@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class CheckedExceptionusingfinally
+
+
+{
+	public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   int i,j=0,k=0;
+	   
+	 
+	   i=10;
+	 
+	   try
+	   {
+	       System.out.println("Enter a number");
+	       j=sc.nextInt();
+	       k=i/j;
+	       System.out.println("Output is"+k);
+	   }
+	   catch(ArithmeticException e)
+	   {
+	       System.out.println("Cannot Divide By Zero" +e);
+	   }
+	   catch(Exception e)
+	   {
+	       System.out.println("Unknown Exception");
+	   }
+	   finally
+	  {
+	      System.out.println("Finally Bye");
+	  }
+	}
+}
